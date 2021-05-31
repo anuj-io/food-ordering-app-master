@@ -443,6 +443,7 @@ class Details extends Component {
             {orderingSection}
           </div>
         )}
+        {/* Following is the common container for all snackbar messages*/}
         <Snackbar
           anchorOrigin={{
             vertical: "bottom",
