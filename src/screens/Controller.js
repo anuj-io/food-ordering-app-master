@@ -8,13 +8,13 @@ import Checkout from "../screens/checkout/Checkout";
 
 class Controller extends Component {
 
-
+//Define the localhost
     constructor(){
         super();
         //will have to be replaced with the provided url
         this.baseUrl= "http://localhost:8080/api/";
     }
-
+// Render all the pages
     render(){
         return(
             <Router>
