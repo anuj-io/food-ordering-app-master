@@ -1,3 +1,4 @@
+/*Restaurant Information Container styles start */
 .restuarant-cover {
   padding: 24px 40px;
   background-color: #e0e0e0;
@@ -24,7 +25,9 @@
 .restaurant-cover-section {
   padding: 12px;
 }
+/*Restaurant Information Container styles end */
 
+/*Cart Items Container styles start */
 .item-root {
   display: flex;
 }
@@ -62,6 +65,13 @@ button.cart-item-action-btn {
   text-align: center;
 }
 
+button.cart-item-action-btn:hover,
+button.cart-item-action-btn:active {
+  background: yellow;
+}
+
+/*Cart Items Container styles end */
+
 /* Few Overriding styles for mobile screen */
 @media only screen and (max-width: 600px) {
   .restaurant-cover-section {
@@ -87,9 +97,4 @@ button.cart-item-action-btn {
   .topMain {
     margin-right: -40px;
   }
-}
-
-button.cart-item-action-btn:hover,
-button.cart-item-action-btn:active {
-  background: yellow;
 }

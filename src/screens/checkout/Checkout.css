@@ -1,7 +1,10 @@
+/*Page Container styles start */
 .checkout-container {
   padding: 20px 40px 0 0;
 }
+/*Page container styles end */
 
+/*Address Container styles start */
 .tab-panel[hidden='true'] {
   display: none;
 }
@@ -58,7 +61,10 @@ ul.address-grid {
 .address-card-root-tile {
   padding: 16px 8px !important;
 }
+/*Address Container styles end */
 
+
+/*Payments Container styles start */
 .payments-blk-ctr {
   padding: 16px;
 }
@@ -70,3 +76,4 @@ ul.address-grid {
 .final-step {
   padding: 24px;
 }
+/*Payments Container styles end */

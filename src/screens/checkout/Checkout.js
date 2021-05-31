@@ -207,6 +207,9 @@ class Checkout extends Component {
     );
   }
 
+
+  // Validates the address in input fields
+  // Sends post request to save address if valid
   handleSaveAddress() {
     const isFlatBuildingNameMissing = !(
       this.state.addressForm.flatBuildingName &&
@@ -276,6 +279,7 @@ class Checkout extends Component {
     }
   }
 
+  // Returns the address form
   getAddressForm() {
     const customClasses = {
       FormControl: {
@@ -554,6 +558,7 @@ class Checkout extends Component {
     );
   }
 
+  // Returns the stepper for delivery address and payment selection
   getCheckoutStepper() {
     const steps = ["Delivery", "Payment"];
     const stepContent = steps.map((step, idx) => {
@@ -575,6 +580,7 @@ class Checkout extends Component {
     );
   }
 
+  // Event handler for placing the order after validating address and payment mode
   placeOrder() {
     if(!this.state.selectedAddressId) {
       this.setState({ snackBarOpen: true, snackBarText: 'Please select an address first' });
@@ -626,6 +632,7 @@ class Checkout extends Component {
     });
   }
 
+  // Returns the cart summary card
   getCartSummary() {
     let bill = 0;
     const cartItemRows = this.state.cart.map(
@@ -727,6 +734,7 @@ class Checkout extends Component {
             </Grid>
           </Grid>
         </div>
+        {/* Following is the common container for all snackbar messages*/}
         <Snackbar
           anchorOrigin={{
             vertical: 'bottom',
